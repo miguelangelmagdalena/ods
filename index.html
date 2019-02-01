@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo-64x74.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Home</title>
+  <title>ODS</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -20,11 +20,19 @@
   <link rel="stylesheet" href="assets/gallery/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  
+
+  <!--Team Section - team1 -->
+  <link rel="stylesheet" href="css/style-team1.css">
+  <!--Team Section - team2 -->
+  <link rel="stylesheet" href="css/style-team2.css">
+  <!--Team Section - team3 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="css/style-team3.css">
+
 </head>
 <body>
-  <section class="menu cid-rbNpQ8aCjr" once="menu" id="menu2-5">
+
+<section class="menu cid-rbNpQ8aCjr" once="menu" id="menu2-5">
 
     
 
@@ -61,7 +69,10 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/f">simple site maker</a></section><section class="header3 cid-rbNpcsqvVQ mbr-parallax-background" id="header3-1">
+<section class="engine"><a href="https://mobirise.info/f">simple site maker</a>
+</section>
+
+<section class="header3 cid-rbNpcsqvVQ mbr-parallax-background" id="header3-1">
 
     
 
@@ -111,6 +122,287 @@
         </div>
     </div>
 </section>
+
+
+<!--Team Section - team1 -->
+<section class="cid-rbNp8JrJaN" id="" style="height:100%">
+    <div style="height:auto">
+        <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);">
+        </div>
+    
+        <div class="container" >
+            <div class="media-container-row">
+                <div class="media-content">
+                    <div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app">
+                        <div class="team-container">
+                            <div class="header">
+                            <h2 class="header-title">Nuestro Equipo</h2>
+                            </div>
+                            <div class="person-list">
+                            <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img class="person-img" :src="person.photo">
+                                <div class="person-details">
+                                <h2 class="person-title">{{person.name}}</h2>
+                                <p class="person-desc">{{person.title}}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="team-detail">
+                            <div class="team-detail-inner" v-if="isOk">
+                            <div class="team-detail-left" :style=`background-image:url(${selectedPersonData.photo})`>
+                                <div class="team-detail-photo"><img :src="selectedPersonData.photo" alt="">
+                                </div>
+                            </div>
+                            <div class="team-detail-right">
+                                <div class="team-detail-bio">
+                                <div class="team-detail-header">
+                                    <h2 class="person-title">{{selectedPersonData.name}}</h2>
+                                    <p class="person-desc">{{selectedPersonData.title}}</p>
+                                    <div class="social">
+                                    <a :href="selectedPersonData.social.facebook" target="_blank" class="ion-social-facebook"></a>
+                                    <a :href="selectedPersonData.social.twitter" target="_blank" class="ion-social-twitter"></a>
+                                    <a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+                                    </div>
+                                </div>
+                                <div class="team-detail-bio-content" v-html="selectedPersonData.bio">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Team Section - team1-->
+
+<!--Team Section - team2 -->
+<section class="cid-rbNOz0lWk3" id="">
+        <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);">
+        </div>
+    
+        <div class="container" >
+            <div class="media-container-row">
+                <div class="media-content">
+                   
+                            <div class="container mt-5">
+                                <div class="row my-5">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team1.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Kundan</h3>
+                                                <span class="post">Frontend  Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team2.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Vivek</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team4.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Jone</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team1.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Kundan</h3>
+                                                <span class="post">Frontend  Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team2.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Vivek</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team4.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Jone</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team1.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Kundan</h3>
+                                                <span class="post">Frontend  Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team2.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Vivek</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="box">
+                                            <img src="http://www.webcoderskull.com/img/team4.png" alt="">
+                                            <div class="box-content">
+                                                <h3 class="title">Jone</h3>
+                                                <span class="post">Web developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--Team Section - team2-->
+
+<!--Team Section - team3 -->
+<section id="team" class="team-area cid-rbNp8JrJaN">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>Our <span>Team</span></h2>
+                        <h4>Meet our awesome and expert team members</h4>
+                    </div>
+                </div>
+            </div>
+                <div class="row team-items">
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>App Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://i.ibb.co/JC4skS0/team-animate.jpg" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>Web designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+</section>
+<!--Team Section - team3-->
 
 <section class="footer4 cid-rbNpq26nHv mbr-reveal" id="footer4-4">
 
@@ -178,24 +470,29 @@
     </div>
 </section>
 
+<!--Team Section - team1-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js'></script>
+<script  src="js/index-team1.js"></script>
+<!--Team Section - team1-->
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/masonry/masonry.pkgd.min.js"></script>
-  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/slidervideo/script.js"></script>
-  <script src="assets/gallery/player.min.js"></script>
-  <script src="assets/gallery/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/dropdown/js/script.min.js"></script>
+<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="assets/parallax/jarallax.min.js"></script>
+<script src="assets/masonry/masonry.pkgd.min.js"></script>
+<script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+<script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="assets/slidervideo/script.js"></script>
+<script src="assets/gallery/player.min.js"></script>
+<script src="assets/gallery/script.js"></script>
+<script src="assets/formoid/formoid.min.js"></script>
   
   
 </body>
